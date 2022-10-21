@@ -1,5 +1,5 @@
 const chilometri = document.querySelector('[name=chilometri]').value;
-const nomeCognome=document.querySelector('[name=nomecogn]').value;
+const nomeCognome=document.querySelector('[name=nomecogn]');
 const eta = document.querySelector('[name=età]').value;
 const centesimiPerKm = 0.21;
 const prezzoBigliettoPerKm = chilometri * centesimiPerKm ;
@@ -25,7 +25,7 @@ if (eta < 18){
 elebutton.addEventListener('click',function(){
     bigliettoFinale.classList.toggle('show'); 
 });
-nomePasseggero.innerHTML=nomeCognome;
+
 numeroCasuale1.innerHTML=Math.floor(Math.random() * 11);
 numeroCasuale2.innerHTML=Math.floor(Math.random() * 100001);
 prezzoFinaleTot.innerHTML=prezzoFinale;

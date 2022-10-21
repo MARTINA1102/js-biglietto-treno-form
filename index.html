@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto del treno</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+   
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <section class="container">
+        <div class="contenitore-dati">
+            <div class="dati">
+                <label for="nome">NOME E COGNOME</label>
+                <input class="nomecogn" type="text" name="nome" id="nome">
+            </div>
+            <div class="dati">
+                <label for="nome">CHILOMETRI</label>
+                <input class="chilometri" type="number" name="chilometri" id="">
+            </div>
+            <div class="dati">
+                <label for="nome">ETA'</label>
+                <input class="eta" type="number" name="età" id="">
+            </div>
+        </div>
+        <div class="bottoni">
+            <input  class="btn" type="button" value="GENERA">
+            <input type="button" value="ANNULLA">    
+        </div>
+    
+    </section>
+    <div class="demo">
+        <h1>IL TUO BIGLIETTO</h1>
+        <section class="biglietto">
+            <h2>DETTAGLIO PASSEGGERI</h2>
+            <div class="dettagli-bigl">
+                <div class="nome-pass">
+                    <h1 class="nome-testo">NOME PASSEGGERO</h2>
+                    <p class="nome_pass"></p>
+                </div>        
+                <div>
+                    <h3>Offerta</h3>
+                    <p>Biglietto Standard</p>
+                </div>
+                <div>
+                    <h3>Carrozza</h3>
+                    <p class="numero-casuale-1"></p>
+                </div>
+                <div>
+                    <h3>Codice CP</h3>
+                    <p class="numero-casuale-2"></p>
+                </div>
+                <div>
+                    <h3>Costo Biglietto</h3>
+                    <div class="prezzo-finale-biglietto"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+</body>
+</html>

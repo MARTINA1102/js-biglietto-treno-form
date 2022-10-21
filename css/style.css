@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(204, 14, 96);
+}
+h1{
+    margin: 4rem 0;
+    text-align: center;
+    color: white;
+}
+
+h3,p{
+    margin: 1rem;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 20px;
+}
+.contenitore-dati{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-between;
+
+}
+.dati{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.bottoni{
+    margin-top: 3rem;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+
+}
+.biglietto{
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: white;
+    padding: 3rem;
+
+}
+.nome-pass{
+    background-color: grey;
+}
+.nome-testo{
+    margin: 1rem;
+    color: black;
+}
+.dettagli-bigl{
+    display: flex;
+    justify-content: space-between;
+}
+.demo{
+    display: none;
+}
+.show{
+    display: block;
+}

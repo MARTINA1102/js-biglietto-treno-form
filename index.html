@@ -12,7 +12,7 @@
    
     <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     <section class="container">
-        <div class="contenitore-dati">
+        <form class="contenitore-dati">
             <div class="dati">
                 <label for="nome">NOME E COGNOME</label>
                 <input class="nomecogn" type="text" name="nome" id="nome">
@@ -23,9 +23,13 @@
             </div>
             <div class="dati">
                 <label for="nome">ETA'</label>
-                <input class="eta" type="number" name="età" id="">
+                <select class="eta" type="number" name="età" id="">
+                    <option value="min">Minorenne</option>
+                    <option value="max">Maggiorenne</option>
+                    <option value="over">Over 65</option>
+                </select>
             </div>
-        </div>
+        </form>
         <div class="bottoni">
             <input  class="btn" type="button" value="GENERA">
             <input type="button" value="ANNULLA">    
@@ -39,7 +43,7 @@
             <div class="dettagli-bigl">
                 <div class="nome-pass">
                     <h1 class="nome-testo">NOME PASSEGGERO</h2>
-                    <p class="nome_pass"></p>
+                    <div id="nome_pass"></div>
                 </div>        
                 <div>
                     <h3>Offerta</h3>

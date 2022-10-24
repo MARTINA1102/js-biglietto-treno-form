@@ -4,7 +4,7 @@ const centesimiPerKm = 0.21;
 const prezzoBigliettoPerKm = chilometri * centesimiPerKm ;
 const elebutton= document.querySelector ('.btn');
 const bigliettoFinale= document.querySelector ('.demo');
-let nomePasseggero= document.querySelector ('nome_pass');
+let nomePasseggero= document.querySelector ('.nome_pass');
 let numeroCasuale1=document.querySelector ('.numero-casuale-1');
 let numeroCasuale2=document.querySelector ('.numero-casuale-2');
 
@@ -18,7 +18,7 @@ elebutton.addEventListener('click',function(){
     const centesimiPerKm = 0.21;
     const prezzoBigliettoPerKm = chilometri * centesimiPerKm ;
     let prezzoFinaleTot=document.querySelector ('.prezzo-finale-biglietto');
-
+   
 
     
 
@@ -29,7 +29,8 @@ elebutton.addEventListener('click',function(){
         console.log(prezzo);
         numeroCasuale1.innerHTML=Math.floor(Math.random() * 11);
         numeroCasuale2.innerHTML=Math.floor(Math.random() * 100001);
-        nomePasseggero= document.getElementById(nome);
+        const nomeInput = document.querySelector('[name=nome]').value;
+        nomePasseggero = nomeInput;
         console.log(nomePasseggero);
         prezzoFinaleTot=(`${prezzo}`);
     
@@ -43,7 +44,7 @@ elebutton.addEventListener('click',function(){
         console.log(prezzo);
         numeroCasuale1.innerHTML=Math.floor(Math.random() * 11);
         numeroCasuale2.innerHTML=Math.floor(Math.random() * 100001);
-        nomePasseggero= document.getElementById(nome);
+        nomePasseggero= document.getElementById('nome');
         console.log(nomePasseggero);
         prezzoFinaleTot=(`${prezzo}`);
     
@@ -57,7 +58,7 @@ elebutton.addEventListener('click',function(){
         console.log(prezzo);
         numeroCasuale1.innerHTML=Math.floor(Math.random() * 11);
         numeroCasuale2.innerHTML=Math.floor(Math.random() * 100001);
-        nomePasseggero= document.getElementById(nome);
+        nomePasseggero= document.getElementById('nome');
         console.log(nomePasseggero);
         prezzoFinaleTot=(`${prezzo}`);
     

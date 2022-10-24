@@ -44,7 +44,8 @@ elebutton.addEventListener('click',function(){
         console.log(prezzo);
         numeroCasuale1.innerHTML=Math.floor(Math.random() * 11);
         numeroCasuale2.innerHTML=Math.floor(Math.random() * 100001);
-        nomePasseggero= document.getElementById('nome');
+        const nomeInput = document.querySelector('[name=nome]').value;
+        nomePasseggero = nomeInput;
         console.log(nomePasseggero);
         prezzoFinaleTot=(`${prezzo}`);
     
@@ -58,7 +59,8 @@ elebutton.addEventListener('click',function(){
         console.log(prezzo);
         numeroCasuale1.innerHTML=Math.floor(Math.random() * 11);
         numeroCasuale2.innerHTML=Math.floor(Math.random() * 100001);
-        nomePasseggero= document.getElementById('nome');
+        const nomeInput = document.querySelector('[name=nome]').value;
+        nomePasseggero = nomeInput;
         console.log(nomePasseggero);
         prezzoFinaleTot=(`${prezzo}`);
     
